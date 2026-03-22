@@ -23,23 +23,30 @@
 
 ---
 
-## 🚀 Comandos básicos
+## 🚀 Comandos
 
 `git clone link-repositorio` — clona o repositório no PC e permite alterações.  
-`cd pasta-repositorio` — entra na pasta do repositório.  
+`cd pasta-repositorio` — entra na pasta do repositório.
+
+`git init` — Inicializa/transforma uma pasta comum em um projeto versionado pelo Git.
 
 `git add a.html` — coloca o arquivo do Workspace na Staging Area.  
 `git add .` — adiciona todos os arquivos não adicionados à Staging Area.  
 
-`git commit -m "txt"` — salva oficialmente no repositório local com uma mensagem.  
+`git commit -m "txt"` — salva oficialmente no repositório local com uma mensagem.
+`git diff` — mostra as diferenças entre versões de arquivos.
 
 `git push` — envia para a nuvem.  
-`git pull` — pega a versão atual do projeto no repositório remoto.  
+`git pull` — pega a versão atual do projeto no repositório remoto. 
+`git fetch` — baixa as atualizações do repositório remoto sem aplicar no código.
 
-`git checkout a1b2c3d` — volta para uma versão do código. `main`: volta ao presente (última versão).  
+`git checkout a1b2c3d` — volta para uma versão do código. `main`: volta ao presente (última versão).
+`git checkout -b novo-design` - cria nova branch
+`git switch nome-branch` — troca de branch ou cria e troca para uma nova branch(-c).
+`git merge` - junta mudanças de uma branch em outra.
 
 `git status` — mostra o estado atual do repositório.  
-`git log` — histórico de commits. `--oneline`: resumido.  
+`git log` — histórico de commits. `--oneline`: resumido.
 
 `git reset --soft HEAD~1` — desfaz o último commit (ainda sem `push`), mas os arquivos permanecem editados.  
 `git reset --hard HEAD~1` — desfaz e descarta as mudanças.
@@ -86,14 +93,3 @@ Se precisar descrição mais detalhada:
 
 Faça um commit por tarefa.  
 Evitar fazer muita coisa e commitar tudo junto.
-
----
-
-## 🌿 Branch
-
-`git checkout -b novo-design`
-
-**Branch:** linha do tempo paralela.  
-Quer testar algo mas não quer quebrar o site funcionando. Cria branch `novo-design`, trabalha nela.  
-Se ficar bom, faz merge com `main`.  
-Se ficar ruim, deleta a branch.
