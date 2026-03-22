@@ -1,4 +1,4 @@
-# 🌿 Git Comandos & Controle de Versionamento
+# 🌿 Git: Comandos & Controle de Versionamento
 
 Este repositório reúne **anotações completas sobre Git**, incluindo comandos, conceitos e fluxos de trabalho utilizados no controle de versão.
 
