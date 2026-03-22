@@ -1,23 +1,21 @@
 # 🌿 Git: Comandos & Controle de Versionamento
 
-Este repositório reúne **anotações completas sobre Git**, incluindo comandos, conceitos e fluxos de trabalho utilizados no controle de versão.
+Este repositório reúne **anotações sobre Git**, incluindo comandos e conceitos utilizados no controle de versão.
 
 ---
 
 # 📚 Conteúdo do Repositório
 
-O repositório contém **um arquivo `.txt` com anotações e comandos do Git**.
+O repositório contém **um arquivo `Git.md` com anotações e comandos do Git**.
 
 ## 📄 Anotações
   O arquivo inclui:
-* comandos básicos
 * comandos intermediários
 * gerenciamento de branches
 * manipulação de commits
 * comandos de sincronização com repositórios remotos
 * comandos de histórico
 * resolução de conflitos
-* fluxos de trabalho comuns
 
 ---
 
@@ -27,24 +25,9 @@ O repositório contém **um arquivo `.txt` com anotações e comandos do Git**.
 
 * o que é controle de versão
 * repositórios locais e remotos
-* staging area
 * commits
 * histórico de versões
 * rastreamento de arquivos
-
----
-
-## 🔹 Comandos Básicos
-
-Alguns comandos registrados no arquivo:
-
-* `git init`
-* `git clone`
-* `git add`
-* `git commit`
-* `git status`
-* `git log`
-* `git diff`
 
 ---
 
@@ -96,8 +79,7 @@ Estudo de situações como:
 
 # 💻 Como Utilizar
 
-O arquivo `.txt` pode ser usado como **referência rápida de comandos Git** durante o desenvolvimento.
-
+O arquivo `Git.md` pode ser usado como **referência rápida de comandos Git** durante um desenvolvimento.
 Basta abrir o arquivo e consultar os comandos quando necessário.
 
 ---
@@ -109,7 +91,7 @@ Este repositório serve como:
 * 📚 material de estudo sobre Git
 * 🧠 guia rápido de comandos
 * 💻 suporte para uso diário no desenvolvimento
-* 📂 organização de conhecimento sobre controle de versão
+* 📂 organização de principais conhecimento sobre controle de versão
 
 ---
 
