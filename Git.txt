@@ -1,0 +1,51 @@
+				Git
+Workspace: Diretório de trabalho no PC (arquivos sendo editados).
+
+Staging Area (index): Área intermediária onde escolhe o que realmente vai entrar no próximo commit.
+
+Repositório Local: Onde ficam guardadas as versões(commits) do projeto localmente. HEAD aponta pro commit atual (último commit da branch atual).
+
+Repositório Remoto: Onde ficam versões na Nuvem(GitHub).
+
+git --version				     | Mostra a versão do git instalada.
+git config --global user.name "Seu Nome"     | Define seu nome nos commits.
+git config --global user.email "a@gmail.com" | Define email usado nos commits, mesmo do GitHub.
+git config --global --list		     | Printa suas informações.
+
+
+git clone link-repositorio | Clona o repositório remoto para o computador.
+cd pasta-repositorio 	   | Entra na pasta do repositório.
+git init		   | Cria um repositório Git na pasta.
+git add a.html       	   | Coloca o arquivo do Workspace na Staging Area.
+git add .	       	   | Adiciona todos arquivos modificados/novos ao Staging Area.
+git commit -m "txt"  	   | Cria um commit no repositório local.
+git push     	     	   | Envia commits para o repositório remoto (GitHub).
+git pull     	     	   | Puxar a versão atual do projeto do repositório remoto.
+git checkout a1b2c3d	   | Volta pra versão do código. main: volta ao presente(última versão).
+git status	     	   | Mostra estado atual dos arquivos (modificados, staged etc).
+git log		     	   | Histórico de commits. --oneline: resumido.
+git reset --soft HEAD~1    | Desfaz último commit (ainda não deu push), mas arquivos permanecem editados.
+git reset --hard HEAD~1    | Desfaz commit e descarta mudanças (perigoso).
+git diff		   | Diferença entre arquivos modificados.
+git rm --cached arquivo	   | Remove arquivo do Git mas mantém no computador.
+
+
+			Explicações
+
+	Ignorar Arquivos
+Crie arquivo .gitignore na raiz do projeto. Arquivos listados nele não serão rastreados pelo Git. Exemplos comuns: node_modules/ , .env , *.log
+
+	Problema
+Esquece de dar git pull antes de trabalhar. Trabalhou em versão antiga e quando tenta git push, dá erro. Tem que dar git pull, Git mescla(merge) as mudanças e se não tiver conflito, ok, se tiver(você e alguem mexeram na mesma linha), Git marca no arquivo e você decide qual versão manter. Edita manualmente, salva, commita.
+
+	Boas práticas
+Começar no imperativo, ser específico. "Corrige validação de email no formulário".
+Se precisar descrição muito detalhada: git commit -m "Titulo" -m "Descricao grande".
+Faça um commit por tarefa, evitar fazer muita coisa e commitar.
+
+	Branch
+Linha de desenvolvimento paralela. Permite testar algo sem quebrar a versão principal. 
+
+git branch 		    | Mostra todas as branchs.
+git checkout -b novo-design | Cria e entra na branch novo-design. Se ficar bom, mescla(merge) com main.
+git branch -d novo-design   | Deleta branch.
