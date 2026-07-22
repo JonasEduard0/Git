@@ -49,3 +49,28 @@ Linha de desenvolvimento paralela. Permite testar algo sem quebrar a versão pri
 git branch 		    | Mostra todas as branchs.
 git checkout -b novo-design | Cria e entra na branch novo-design. Se ficar bom, mescla(merge) com main.
 git branch -d novo-design   | Deleta branch.
+
+
+		Boas práticas de Branches, Commits e Pull Requests
+Uma branch deve representar uma tarefa específica. Evitar misturar várias funcionalidades na mesma branch.
+
+Padrão para nomes de branches:
+feature/nome-da-funcionalidade | Nova funcionalidade.
+fix/nome-do-problema	       | Correção de bug.
+docs/nome-da-documentacao      | Alteração na documentação.
+
+	Conventional Commits: Padronização das mensagens de commit.
+feat: 	 | Nova funcionalidade.
+fix: 	 | Correção de bug.
+docs: 	 | Alteração na documentação.
+style: 	 | Formatação/estilo sem alteração de lógica.
+refactor:| Reestruturação do código sem mudar comportamento.
+test: 	 | Criação ou alteração de testes.
+chore: 	 | Tarefas internas, configurações ou dependências.
+
+Pull Request(PR): Solicitação para mesclar uma branch em outra, normalmente na main. Serve para revisar o código antes do merge.
+Uma PR deve explicar resumidamente:
+* O que foi alterado.
+* Por que foi alterado.
+* Como testar.
+* Tarefas ou issues relacionadas.
