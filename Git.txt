@@ -51,15 +51,8 @@ git checkout -b novo-design | Cria e entra na branch novo-design. Se ficar bom, 
 git branch -d novo-design   | Deleta branch.
 
 
-		Boas práticas de Branches, Commits e Pull Requests
-Uma branch deve representar uma tarefa específica. Evitar misturar várias funcionalidades na mesma branch.
-
-Padrão para nomes de branches:
-feature/nome-da-funcionalidade | Nova funcionalidade.
-fix/nome-do-problema	       | Correção de bug.
-docs/nome-da-documentacao      | Alteração na documentação.
-
 	Conventional Commits: Padronização das mensagens de commit.
+Uma branch deve representar uma tarefa específica. Evitar misturar várias funcionalidades na mesma branch.
 feat: 	 | Nova funcionalidade.
 fix: 	 | Correção de bug.
 docs: 	 | Alteração na documentação.
