@@ -60,6 +60,8 @@ style: 	 | Formatação/estilo sem alteração de lógica.
 refactor:| Reestruturação do código sem mudar comportamento.
 test: 	 | Criação ou alteração de testes.
 chore: 	 | Tarefas internas, configurações ou dependências.
+perf	 | Melhorias de desempenho
+
 
 Pull Request(PR): Solicitação para mesclar uma branch em outra, normalmente na main. Serve para revisar o código antes do merge.
 Uma PR deve explicar resumidamente:
